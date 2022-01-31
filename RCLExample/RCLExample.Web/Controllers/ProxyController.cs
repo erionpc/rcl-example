@@ -20,6 +20,8 @@ namespace RCLExample.Web.Controllers
         [HttpGet]
         public IActionResult Get([FromQuery] string template)
         {
+            _logger.LogInformation($"Called Proxy Get '{template}'");
+
             var route = _config.TemplateUrls.FirstOrDefault(x => x.TemplateName == template);
             if (route == null)
             {
