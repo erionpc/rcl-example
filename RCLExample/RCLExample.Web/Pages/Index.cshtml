@@ -7,10 +7,11 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>the grey background comes from the RCL</p>
-    <p>
-        <a href="SampleComponent">Load the sample component from RCLExample.XRCLLib</a>
-    </p>
-    <p>
-        <a href="api/WeatherForecast">Call the sample API controller</a>
-    </p>
+
+    <ul style="text-align: left; list-style-type: none;">
+        <li><a href="SampleComponent">Load the sample component from RCLExample.XRCLLib</a></li>
+        <li><a href="api/WeatherForecast">Call the sample API endpoint</a></li>
+        <li><a href="api/Proxy?template=internalTemplate">Call the proxy API to be redirected to the sample component</a></li>
+        <li><a href="api/Proxy?template=externalTemplate">Call the proxy API to be redirected to google.com</a></li>
+    </ul>
 </div>
